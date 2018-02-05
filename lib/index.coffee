@@ -2,7 +2,7 @@ request = require 'request-promise'
 
 getAccountStats = ({username}) ->
   if not username? then throw new Error('A username needs to be passed')
-  uri = "https://instagram.com/#{username}/?__a=1"
+  uri = "https://www.instagram.com/#{username}/?__a=1"
 
   request.get(
     uri: uri
